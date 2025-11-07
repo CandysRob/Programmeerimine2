@@ -1,16 +1,21 @@
-﻿using System;
-using System.Collections.Generic;
-using System.Linq;
-using System.Text;
-using System.Threading.Tasks;
+﻿using System.ComponentModel.DataAnnotations;
 
 namespace KooliProjekt.Application.Data
 {
     public class Opilased
     {
-           public string Name { get; set; }
-              public int Age { get; set; }
-        public Opilased() { }
+        [Key]
+        public int Id { get; set; }
 
+        [Required, MaxLength(100)]
+        public string Eesnimi { get; set; }
+
+        [Required, MaxLength(100)]
+        public string Perenimi { get; set; }
+
+        public int Vanus { get; set; }
+
+        [MaxLength(50)]
+        public string Klass { get; set; }
     }
 }

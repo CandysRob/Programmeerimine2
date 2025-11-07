@@ -9,17 +9,15 @@ namespace KooliProjekt.Application.Data
 {
     public class ApplicationDbContext : DbContext
     {
-        public ApplicationDbContext(DbContextOptions<ApplicationDbContext> options) : base(options)
+        public ApplicationDbContext(DbContextOptions<ApplicationDbContext> options)
+            : base(options)
         {
         }
 
-        protected ApplicationDbContext()
-        {
-        }
 
         public DbSet<ToDoList> ToDoLists { get; set; }
         public DbSet<ToDoItem> ToDoItems { get; set; }
-        public DbSet<Opilased> Opilased { get; set; }
 
+        public DbSet<Opilased> Opilased { get; set; }
     }
 }

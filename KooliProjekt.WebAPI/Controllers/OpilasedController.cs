@@ -1,31 +1,28 @@
-﻿using System.ComponentModel.DataAnnotations;
+﻿using MediatR;
+using Microsoft.AspNetCore.Mvc;
+using KooliProjekt.Application.Data;
+using KooliProjekt.Application.Features.OpilasedFeature;
+using System.Collections.Generic;
+using System.Threading.Tasks;
 
-namespace KooliProjekt.WebAPI.Controllers
+namespace KooliProjekt.API.Controllers
 {
-    public class OpilasedController
+    [Route("api/[controller]")]
+    [ApiController]
+    public class OpilasedController : ControllerBase
     {
-        using System.ComponentModel.DataAnnotations;
+        private readonly IMediator _mediator;
 
-namespace KooliProjekt.Application.Data
-    {
-        public class Opilased
+        public OpilasedController(IMediator mediator)
         {
-            [Key]
-            public int Id { get; set; }
+            _mediator = mediator;
+        }
 
-            [Required]
-            [MaxLength(100)]
-            public string Eesnimi { get; set; }
-
-            [Required]
-            [MaxLength(100)]
-            public string PerENimi { get; set; }
-
-            public int Vanus { get; set; }
-
-            public string Klass { get; set; }
+        [HttpGet]
+        public async Task<ActionResult<List<Opilased>>> GetOpilased()
+        {
+            var result = await _mediator.Send(new GetOpilasedListQuery());
+            return Ok(result);
         }
     }
-
-}
 }

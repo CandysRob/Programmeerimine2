@@ -5,9 +5,10 @@ using System.Collections.Generic;
 using System.Threading;
 using System.Threading.Tasks;
 
-namespace KooliProjekt.Application.Features.Opilased
+namespace KooliProjekt.Application.Features.OpilasedFeature
 {
-    public class GetOpilasedListQueryHandler : IRequestHandler<GetOpilasedListQuery, List<GetOpilasedListQueryHandler>>
+    // Handler, mis täidab päringu ja toob kõik õpilased andmebaasist
+    public class GetOpilasedListQueryHandler : IRequestHandler<GetOpilasedListQuery, List<Opilased>>
     {
         private readonly ApplicationDbContext _context;
 
@@ -16,7 +17,7 @@ namespace KooliProjekt.Application.Features.Opilased
             _context = context;
         }
 
-        public async Task<List<GetOpilasedListQueryHandler>> Handle(GetOpilasedListQuery request, CancellationToken cancellationToken)
+        public async Task<List<Opilased>> Handle(GetOpilasedListQuery request, CancellationToken cancellationToken)
         {
             return await _context.Opilased.ToListAsync(cancellationToken);
         }
