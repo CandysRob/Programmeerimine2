@@ -12,3 +12,4 @@ C:\Users\roberto.palm\Desktop\Proga2\KooliProjekt.Application\obj\Debug\net8.0\r
 C:\Users\roberto.palm\Desktop\Proga2\KooliProjekt.Application\obj\Debug\net8.0\KooliProjekt.Application.pdb
 C:\Users\roberto.palm\Desktop\Proga2\KooliProjekt.Application\obj\Debug\net8.0\KooliProjekt.Application.genruntimeconfig.cache
 C:\Users\roberto.palm\Desktop\Proga2\KooliProjekt.Application\obj\Debug\net8.0\ref\KooliProjekt.Application.dll
+C:\Users\roberto.palm\Desktop\Proga2\KooliProjekt.Application\obj\Debug\net8.0\KooliProjekt.Application.sourcelink.json

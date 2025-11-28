@@ -1,15 +1,15 @@
-using System.Collections.Generic;
 using System.Linq;
 using System.Threading;
 using System.Threading.Tasks;
 using KooliProjekt.Application.Data;
+using KooliProjekt.Application.Infrastructure.Paging;
 using KooliProjekt.Application.Infrastructure.Results;
 using MediatR;
 using Microsoft.EntityFrameworkCore;
 
 namespace KooliProjekt.Application.Features.Tootajad
 {
-    public class ListTootajadQueryHandler : IRequestHandler<ListTootajadQuery, OperationResult<IList<Tootaja>>>
+    public class ListTootajadQueryHandler : IRequestHandler<ListTootajadQuery, OperationResult<PagedResult<Tootaja>>>
     {
         private readonly ApplicationDbContext _dbContext;
         
@@ -18,13 +18,14 @@ namespace KooliProjekt.Application.Features.Tootajad
             _dbContext = dbContext;
         }
 
-        public async Task<OperationResult<IList<Tootaja>>> Handle(ListTootajadQuery request, CancellationToken cancellationToken)
+        public async Task<OperationResult<PagedResult<Tootaja>>> Handle(ListTootajadQuery request, CancellationToken cancellationToken)
         {
-            var result = new OperationResult<IList<Tootaja>>();
+            var result = new OperationResult<PagedResult<Tootaja>>();
+            
             result.Value = await _dbContext
                 .Tootajad
                 .OrderBy(t => t.Nimi)
-                .ToListAsync(cancellationToken);
+                .GetPagedAsync(request.Page, request.PageSize);
 
             return result;
         }

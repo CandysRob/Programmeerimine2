@@ -144,10 +144,11 @@ C:\Users\roberto.palm\Desktop\Proga2\KooliProjekt.WebAPI\obj\Debug\net8.0\static
 C:\Users\roberto.palm\Desktop\Proga2\KooliProjekt.WebAPI\obj\Debug\net8.0\staticwebassets.build.json.cache
 C:\Users\roberto.palm\Desktop\Proga2\KooliProjekt.WebAPI\obj\Debug\net8.0\staticwebassets.development.json
 C:\Users\roberto.palm\Desktop\Proga2\KooliProjekt.WebAPI\obj\Debug\net8.0\staticwebassets.build.endpoints.json
-C:\Users\roberto.palm\Desktop\Proga2\KooliProjekt.WebAPI\obj\Debug\net8.0\swae.build.ex.cache
 C:\Users\roberto.palm\Desktop\Proga2\KooliProjekt.WebAPI\obj\Debug\net8.0\KooliPro.51C9F8A2.Up2Date
 C:\Users\roberto.palm\Desktop\Proga2\KooliProjekt.WebAPI\obj\Debug\net8.0\KooliProjekt.WebAPI.dll
 C:\Users\roberto.palm\Desktop\Proga2\KooliProjekt.WebAPI\obj\Debug\net8.0\refint\KooliProjekt.WebAPI.dll
 C:\Users\roberto.palm\Desktop\Proga2\KooliProjekt.WebAPI\obj\Debug\net8.0\KooliProjekt.WebAPI.pdb
 C:\Users\roberto.palm\Desktop\Proga2\KooliProjekt.WebAPI\obj\Debug\net8.0\KooliProjekt.WebAPI.genruntimeconfig.cache
 C:\Users\roberto.palm\Desktop\Proga2\KooliProjekt.WebAPI\obj\Debug\net8.0\ref\KooliProjekt.WebAPI.dll
+C:\Users\roberto.palm\Desktop\Proga2\KooliProjekt.WebAPI\obj\Debug\net8.0\KooliProjekt.WebAPI.sourcelink.json
+C:\Users\roberto.palm\Desktop\Proga2\KooliProjekt.WebAPI\obj\Debug\net8.0\staticwebassets.upToDateCheck.txt
