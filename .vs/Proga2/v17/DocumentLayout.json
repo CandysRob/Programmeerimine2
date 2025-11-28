@@ -1,0 +1,279 @@
+{
+  "Version": 1,
+  "WorkspaceRootPath": "C:\\Users\\roberto.palm\\Desktop\\Proga2\\",
+  "Documents": [
+    {
+      "AbsoluteMoniker": "D:0:0:{A2FE74E1-B743-11D0-AE1A-00A0C90FFFC3}|\u003CMiscFiles\u003E|C:\\Users\\roberto.palm\\Desktop\\Proga2\\KooliProjekt.Application\\Features\\Ylesanded\\ListYlesandedQueryHandler.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{A2FE74E1-B743-11D0-AE1A-00A0C90FFFC3}|\u003CMiscFiles\u003E|solutionrelative:KooliProjekt.Application\\Features\\Ylesanded\\ListYlesandedQueryHandler.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{A2FE74E1-B743-11D0-AE1A-00A0C90FFFC3}|\u003CMiscFiles\u003E|C:\\Users\\roberto.palm\\Desktop\\Proga2\\KooliProjekt.Application\\Data\\ToDoList.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{A2FE74E1-B743-11D0-AE1A-00A0C90FFFC3}|\u003CMiscFiles\u003E|solutionrelative:KooliProjekt.Application\\Data\\ToDoList.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{A2FE74E1-B743-11D0-AE1A-00A0C90FFFC3}|\u003CMiscFiles\u003E|C:\\Users\\roberto.palm\\Desktop\\Proga2\\KooliProjekt.Application\\Data\\Projekt.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{A2FE74E1-B743-11D0-AE1A-00A0C90FFFC3}|\u003CMiscFiles\u003E|solutionrelative:KooliProjekt.Application\\Data\\Projekt.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{A2FE74E1-B743-11D0-AE1A-00A0C90FFFC3}|\u003CMiscFiles\u003E|C:\\Users\\roberto.palm\\Desktop\\Proga2\\KooliProjekt.Application\\Data\\Tootaja.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{A2FE74E1-B743-11D0-AE1A-00A0C90FFFC3}|\u003CMiscFiles\u003E|solutionrelative:KooliProjekt.Application\\Data\\Tootaja.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{A2FE74E1-B743-11D0-AE1A-00A0C90FFFC3}|\u003CMiscFiles\u003E|C:\\Users\\roberto.palm\\Desktop\\Proga2\\KooliProjekt.Application\\Data\\Ylesanne.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{A2FE74E1-B743-11D0-AE1A-00A0C90FFFC3}|\u003CMiscFiles\u003E|solutionrelative:KooliProjekt.Application\\Data\\Ylesanne.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{A2FE74E1-B743-11D0-AE1A-00A0C90FFFC3}|\u003CMiscFiles\u003E|C:\\Users\\roberto.palm\\Desktop\\Proga2\\KooliProjekt.Application\\Data\\ApplicationDbContext.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{A2FE74E1-B743-11D0-AE1A-00A0C90FFFC3}|\u003CMiscFiles\u003E|solutionrelative:KooliProjekt.Application\\Data\\ApplicationDbContext.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{A2FE74E1-B743-11D0-AE1A-00A0C90FFFC3}|\u003CMiscFiles\u003E|C:\\Users\\roberto.palm\\Desktop\\Proga2\\KooliProjekt.Application\\Features\\Projektid\\ListProjektidQuery.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{A2FE74E1-B743-11D0-AE1A-00A0C90FFFC3}|\u003CMiscFiles\u003E|solutionrelative:KooliProjekt.Application\\Features\\Projektid\\ListProjektidQuery.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{A2FE74E1-B743-11D0-AE1A-00A0C90FFFC3}|\u003CMiscFiles\u003E|C:\\Users\\roberto.palm\\Desktop\\Proga2\\KooliProjekt.Application\\Features\\Projektid\\ListProjektidQueryHandler.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{A2FE74E1-B743-11D0-AE1A-00A0C90FFFC3}|\u003CMiscFiles\u003E|solutionrelative:KooliProjekt.Application\\Features\\Projektid\\ListProjektidQueryHandler.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{A2FE74E1-B743-11D0-AE1A-00A0C90FFFC3}|\u003CMiscFiles\u003E|C:\\Users\\roberto.palm\\Desktop\\Proga2\\KooliProjekt.Application\\Features\\Tootajad\\ListTootajadQuery.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{A2FE74E1-B743-11D0-AE1A-00A0C90FFFC3}|\u003CMiscFiles\u003E|solutionrelative:KooliProjekt.Application\\Features\\Tootajad\\ListTootajadQuery.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{A2FE74E1-B743-11D0-AE1A-00A0C90FFFC3}|\u003CMiscFiles\u003E|C:\\Users\\roberto.palm\\Desktop\\Proga2\\KooliProjekt.Application\\Features\\Tootajad\\ListTootajadQueryHandler.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{A2FE74E1-B743-11D0-AE1A-00A0C90FFFC3}|\u003CMiscFiles\u003E|solutionrelative:KooliProjekt.Application\\Features\\Tootajad\\ListTootajadQueryHandler.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{A2FE74E1-B743-11D0-AE1A-00A0C90FFFC3}|\u003CMiscFiles\u003E|C:\\Users\\roberto.palm\\Desktop\\Proga2\\KooliProjekt.Application\\Features\\Ylesanded\\ListYlesandedQuery.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{A2FE74E1-B743-11D0-AE1A-00A0C90FFFC3}|\u003CMiscFiles\u003E|solutionrelative:KooliProjekt.Application\\Features\\Ylesanded\\ListYlesandedQuery.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{A2FE74E1-B743-11D0-AE1A-00A0C90FFFC3}|\u003CMiscFiles\u003E|C:\\Users\\roberto.palm\\Desktop\\Proga2\\KooliProjekt.WebAPI\\Controllers\\ProjektidController.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{A2FE74E1-B743-11D0-AE1A-00A0C90FFFC3}|\u003CMiscFiles\u003E|solutionrelative:KooliProjekt.WebAPI\\Controllers\\ProjektidController.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{A2FE74E1-B743-11D0-AE1A-00A0C90FFFC3}|\u003CMiscFiles\u003E|C:\\Users\\roberto.palm\\Desktop\\Proga2\\KooliProjekt.WebAPI\\Controllers\\TootajadController.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{A2FE74E1-B743-11D0-AE1A-00A0C90FFFC3}|\u003CMiscFiles\u003E|solutionrelative:KooliProjekt.WebAPI\\Controllers\\TootajadController.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{A2FE74E1-B743-11D0-AE1A-00A0C90FFFC3}|\u003CMiscFiles\u003E|C:\\Users\\roberto.palm\\Desktop\\Proga2\\KooliProjekt.WebAPI\\Controllers\\YlesandedController.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{A2FE74E1-B743-11D0-AE1A-00A0C90FFFC3}|\u003CMiscFiles\u003E|solutionrelative:KooliProjekt.WebAPI\\Controllers\\YlesandedController.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{A2FE74E1-B743-11D0-AE1A-00A0C90FFFC3}|\u003CMiscFiles\u003E|C:\\Users\\roberto.palm\\Desktop\\Proga2\\KooliProjekt.Application\\Data\\ToDoItem.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{A2FE74E1-B743-11D0-AE1A-00A0C90FFFC3}|\u003CMiscFiles\u003E|solutionrelative:KooliProjekt.Application\\Data\\ToDoItem.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    }
+  ],
+  "DocumentGroupContainers": [
+    {
+      "Orientation": 0,
+      "VerticalTabListWidth": 256,
+      "DocumentGroups": [
+        {
+          "DockedWidth": 200,
+          "SelectedChildIndex": 3,
+          "Children": [
+            {
+              "$type": "Bookmark",
+              "Name": "ST:0:0:{1c4feeaa-4718-4aa9-859d-94ce25d182ba}"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 1,
+              "Title": "ToDoList.cs",
+              "DocumentMoniker": "C:\\Users\\roberto.palm\\Desktop\\Proga2\\KooliProjekt.Application\\Data\\ToDoList.cs",
+              "RelativeDocumentMoniker": "KooliProjekt.Application\\Data\\ToDoList.cs",
+              "ToolTip": "C:\\Users\\roberto.palm\\Desktop\\Proga2\\KooliProjekt.Application\\Data\\ToDoList.cs",
+              "RelativeToolTip": "KooliProjekt.Application\\Data\\ToDoList.cs",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAAAgAAAAAAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2025-11-28T08:22:57.329Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 11,
+              "Title": "ProjektidController.cs",
+              "DocumentMoniker": "C:\\Users\\roberto.palm\\Desktop\\Proga2\\KooliProjekt.WebAPI\\Controllers\\ProjektidController.cs",
+              "RelativeDocumentMoniker": "KooliProjekt.WebAPI\\Controllers\\ProjektidController.cs",
+              "ToolTip": "C:\\Users\\roberto.palm\\Desktop\\Proga2\\KooliProjekt.WebAPI\\Controllers\\ProjektidController.cs",
+              "RelativeToolTip": "KooliProjekt.WebAPI\\Controllers\\ProjektidController.cs",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAABoAAAAAAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2025-11-28T08:22:25.961Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 0,
+              "Title": "ListYlesandedQueryHandler.cs",
+              "DocumentMoniker": "C:\\Users\\roberto.palm\\Desktop\\Proga2\\KooliProjekt.Application\\Features\\Ylesanded\\ListYlesandedQueryHandler.cs",
+              "RelativeDocumentMoniker": "KooliProjekt.Application\\Features\\Ylesanded\\ListYlesandedQueryHandler.cs",
+              "ToolTip": "C:\\Users\\roberto.palm\\Desktop\\Proga2\\KooliProjekt.Application\\Features\\Ylesanded\\ListYlesandedQueryHandler.cs",
+              "RelativeToolTip": "KooliProjekt.Application\\Features\\Ylesanded\\ListYlesandedQueryHandler.cs",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAAAMAAAAdAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2025-11-28T08:22:11.67Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 10,
+              "Title": "ListYlesandedQuery.cs",
+              "DocumentMoniker": "C:\\Users\\roberto.palm\\Desktop\\Proga2\\KooliProjekt.Application\\Features\\Ylesanded\\ListYlesandedQuery.cs",
+              "RelativeDocumentMoniker": "KooliProjekt.Application\\Features\\Ylesanded\\ListYlesandedQuery.cs",
+              "ToolTip": "C:\\Users\\roberto.palm\\Desktop\\Proga2\\KooliProjekt.Application\\Features\\Ylesanded\\ListYlesandedQuery.cs",
+              "RelativeToolTip": "KooliProjekt.Application\\Features\\Ylesanded\\ListYlesandedQuery.cs",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAAAsAAAAAAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2025-11-28T08:22:05.11Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 9,
+              "Title": "ListTootajadQueryHandler.cs",
+              "DocumentMoniker": "C:\\Users\\roberto.palm\\Desktop\\Proga2\\KooliProjekt.Application\\Features\\Tootajad\\ListTootajadQueryHandler.cs",
+              "RelativeDocumentMoniker": "KooliProjekt.Application\\Features\\Tootajad\\ListTootajadQueryHandler.cs",
+              "ToolTip": "C:\\Users\\roberto.palm\\Desktop\\Proga2\\KooliProjekt.Application\\Features\\Tootajad\\ListTootajadQueryHandler.cs",
+              "RelativeToolTip": "KooliProjekt.Application\\Features\\Tootajad\\ListTootajadQueryHandler.cs",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAACAAAAAAAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2025-11-28T08:22:00.693Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 8,
+              "Title": "ListTootajadQuery.cs",
+              "DocumentMoniker": "C:\\Users\\roberto.palm\\Desktop\\Proga2\\KooliProjekt.Application\\Features\\Tootajad\\ListTootajadQuery.cs",
+              "RelativeDocumentMoniker": "KooliProjekt.Application\\Features\\Tootajad\\ListTootajadQuery.cs",
+              "ToolTip": "C:\\Users\\roberto.palm\\Desktop\\Proga2\\KooliProjekt.Application\\Features\\Tootajad\\ListTootajadQuery.cs",
+              "RelativeToolTip": "KooliProjekt.Application\\Features\\Tootajad\\ListTootajadQuery.cs",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAAAsAAAAAAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2025-11-28T08:21:54.278Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 7,
+              "Title": "ListProjektidQueryHandler.cs",
+              "DocumentMoniker": "C:\\Users\\roberto.palm\\Desktop\\Proga2\\KooliProjekt.Application\\Features\\Projektid\\ListProjektidQueryHandler.cs",
+              "RelativeDocumentMoniker": "KooliProjekt.Application\\Features\\Projektid\\ListProjektidQueryHandler.cs",
+              "ToolTip": "C:\\Users\\roberto.palm\\Desktop\\Proga2\\KooliProjekt.Application\\Features\\Projektid\\ListProjektidQueryHandler.cs",
+              "RelativeToolTip": "KooliProjekt.Application\\Features\\Projektid\\ListProjektidQueryHandler.cs",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAACAAAAAAAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2025-11-28T08:21:50.186Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 6,
+              "Title": "ListProjektidQuery.cs",
+              "DocumentMoniker": "C:\\Users\\roberto.palm\\Desktop\\Proga2\\KooliProjekt.Application\\Features\\Projektid\\ListProjektidQuery.cs",
+              "RelativeDocumentMoniker": "KooliProjekt.Application\\Features\\Projektid\\ListProjektidQuery.cs",
+              "ToolTip": "C:\\Users\\roberto.palm\\Desktop\\Proga2\\KooliProjekt.Application\\Features\\Projektid\\ListProjektidQuery.cs",
+              "RelativeToolTip": "KooliProjekt.Application\\Features\\Projektid\\ListProjektidQuery.cs",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAAAsAAAAAAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2025-11-28T08:21:43.737Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 5,
+              "Title": "ApplicationDbContext.cs",
+              "DocumentMoniker": "C:\\Users\\roberto.palm\\Desktop\\Proga2\\KooliProjekt.Application\\Data\\ApplicationDbContext.cs",
+              "RelativeDocumentMoniker": "KooliProjekt.Application\\Data\\ApplicationDbContext.cs",
+              "ToolTip": "C:\\Users\\roberto.palm\\Desktop\\Proga2\\KooliProjekt.Application\\Data\\ApplicationDbContext.cs",
+              "RelativeToolTip": "KooliProjekt.Application\\Data\\ApplicationDbContext.cs",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2025-11-28T08:21:32.432Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 4,
+              "Title": "Ylesanne.cs",
+              "DocumentMoniker": "C:\\Users\\roberto.palm\\Desktop\\Proga2\\KooliProjekt.Application\\Data\\Ylesanne.cs",
+              "RelativeDocumentMoniker": "KooliProjekt.Application\\Data\\Ylesanne.cs",
+              "ToolTip": "C:\\Users\\roberto.palm\\Desktop\\Proga2\\KooliProjekt.Application\\Data\\Ylesanne.cs",
+              "RelativeToolTip": "KooliProjekt.Application\\Data\\Ylesanne.cs",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAABQAAAAAAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2025-11-28T08:21:25.622Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 3,
+              "Title": "Tootaja.cs",
+              "DocumentMoniker": "C:\\Users\\roberto.palm\\Desktop\\Proga2\\KooliProjekt.Application\\Data\\Tootaja.cs",
+              "RelativeDocumentMoniker": "KooliProjekt.Application\\Data\\Tootaja.cs",
+              "ToolTip": "C:\\Users\\roberto.palm\\Desktop\\Proga2\\KooliProjekt.Application\\Data\\Tootaja.cs",
+              "RelativeToolTip": "KooliProjekt.Application\\Data\\Tootaja.cs",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAAA8AAAAAAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2025-11-28T08:21:20.8Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 2,
+              "Title": "Projekt.cs",
+              "DocumentMoniker": "C:\\Users\\roberto.palm\\Desktop\\Proga2\\KooliProjekt.Application\\Data\\Projekt.cs",
+              "RelativeDocumentMoniker": "KooliProjekt.Application\\Data\\Projekt.cs",
+              "ToolTip": "C:\\Users\\roberto.palm\\Desktop\\Proga2\\KooliProjekt.Application\\Data\\Projekt.cs",
+              "RelativeToolTip": "KooliProjekt.Application\\Data\\Projekt.cs",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAABAAAAAAAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2025-11-28T08:21:14.897Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 14,
+              "Title": "ToDoItem.cs",
+              "DocumentMoniker": "C:\\Users\\roberto.palm\\Desktop\\Proga2\\KooliProjekt.Application\\Data\\ToDoItem.cs",
+              "RelativeDocumentMoniker": "KooliProjekt.Application\\Data\\ToDoItem.cs",
+              "ToolTip": "C:\\Users\\roberto.palm\\Desktop\\Proga2\\KooliProjekt.Application\\Data\\ToDoItem.cs",
+              "RelativeToolTip": "KooliProjekt.Application\\Data\\ToDoItem.cs",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAAAwAAAAAAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2025-11-28T08:23:01.702Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 13,
+              "Title": "YlesandedController.cs",
+              "DocumentMoniker": "C:\\Users\\roberto.palm\\Desktop\\Proga2\\KooliProjekt.WebAPI\\Controllers\\YlesandedController.cs",
+              "RelativeDocumentMoniker": "KooliProjekt.WebAPI\\Controllers\\YlesandedController.cs",
+              "ToolTip": "C:\\Users\\roberto.palm\\Desktop\\Proga2\\KooliProjekt.WebAPI\\Controllers\\YlesandedController.cs",
+              "RelativeToolTip": "KooliProjekt.WebAPI\\Controllers\\YlesandedController.cs",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAABoAAAAAAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2025-11-28T08:22:35.046Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 12,
+              "Title": "TootajadController.cs",
+              "DocumentMoniker": "C:\\Users\\roberto.palm\\Desktop\\Proga2\\KooliProjekt.WebAPI\\Controllers\\TootajadController.cs",
+              "RelativeDocumentMoniker": "KooliProjekt.WebAPI\\Controllers\\TootajadController.cs",
+              "ToolTip": "C:\\Users\\roberto.palm\\Desktop\\Proga2\\KooliProjekt.WebAPI\\Controllers\\TootajadController.cs",
+              "RelativeToolTip": "KooliProjekt.WebAPI\\Controllers\\TootajadController.cs",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAABoAAAAAAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2025-11-28T08:22:30.377Z",
+              "EditorCaption": ""
+            }
+          ]
+        }
+      ]
+    }
+  ]
+}

@@ -1,0 +1,108 @@
+<mxfile host="app.diagrams.net" agent="Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/142.0.0.0 Safari/537.36 Edg/142.0.0.0" version="29.2.1">
+  <diagram name="Page-1" id="REfzf8sF9y5R0eGoOogs">
+    <mxGraphModel dx="1715" dy="955" grid="1" gridSize="10" guides="1" tooltips="1" connect="1" arrows="1" fold="1" page="1" pageScale="1" pageWidth="850" pageHeight="1100" math="0" shadow="0">
+      <root>
+        <mxCell id="0" />
+        <mxCell id="1" parent="0" />
+        <mxCell id="_bn_YdXfYaCvoLVPxMD2-1" parent="1" style="swimlane;fontStyle=1;align=center;verticalAlign=top;childLayout=stackLayout;horizontal=1;startSize=30.933333333333334;horizontalStack=0;resizeParent=1;resizeParentMax=0;resizeLast=0;collapsible=0;marginBottom=0;" value="Projekt" vertex="1">
+          <mxGeometry height="231.93333333333334" width="230" x="160" y="130" as="geometry" />
+        </mxCell>
+        <mxCell id="_bn_YdXfYaCvoLVPxMD2-2" parent="_bn_YdXfYaCvoLVPxMD2-1" style="text;strokeColor=none;fillColor=none;align=left;verticalAlign=top;spacingLeft=4;spacingRight=4;overflow=hidden;rotatable=0;points=[[0,0.5],[1,0.5]];portConstraint=eastwest;" value="+int Id" vertex="1">
+          <mxGeometry height="31" width="230" y="30.933333333333334" as="geometry" />
+        </mxCell>
+        <mxCell id="_bn_YdXfYaCvoLVPxMD2-3" parent="_bn_YdXfYaCvoLVPxMD2-1" style="text;strokeColor=none;fillColor=none;align=left;verticalAlign=top;spacingLeft=4;spacingRight=4;overflow=hidden;rotatable=0;points=[[0,0.5],[1,0.5]];portConstraint=eastwest;" value="+string Nimi" vertex="1">
+          <mxGeometry height="31" width="230" y="61.93333333333334" as="geometry" />
+        </mxCell>
+        <mxCell id="_bn_YdXfYaCvoLVPxMD2-4" parent="_bn_YdXfYaCvoLVPxMD2-1" style="text;strokeColor=none;fillColor=none;align=left;verticalAlign=top;spacingLeft=4;spacingRight=4;overflow=hidden;rotatable=0;points=[[0,0.5],[1,0.5]];portConstraint=eastwest;" value="+DateTime AlgusKuupaev" vertex="1">
+          <mxGeometry height="31" width="230" y="92.93333333333334" as="geometry" />
+        </mxCell>
+        <mxCell id="_bn_YdXfYaCvoLVPxMD2-5" parent="_bn_YdXfYaCvoLVPxMD2-1" style="text;strokeColor=none;fillColor=none;align=left;verticalAlign=top;spacingLeft=4;spacingRight=4;overflow=hidden;rotatable=0;points=[[0,0.5],[1,0.5]];portConstraint=eastwest;" value="+DateTime LoppKuupaev" vertex="1">
+          <mxGeometry height="31" width="230" y="123.93333333333334" as="geometry" />
+        </mxCell>
+        <mxCell id="_bn_YdXfYaCvoLVPxMD2-6" parent="_bn_YdXfYaCvoLVPxMD2-1" style="text;strokeColor=none;fillColor=none;align=left;verticalAlign=top;spacingLeft=4;spacingRight=4;overflow=hidden;rotatable=0;points=[[0,0.5],[1,0.5]];portConstraint=eastwest;" value="+decimal Eelarve" vertex="1">
+          <mxGeometry height="31" width="230" y="154.93333333333334" as="geometry" />
+        </mxCell>
+        <mxCell id="_bn_YdXfYaCvoLVPxMD2-7" parent="_bn_YdXfYaCvoLVPxMD2-1" style="text;strokeColor=none;fillColor=none;align=left;verticalAlign=top;spacingLeft=4;spacingRight=4;overflow=hidden;rotatable=0;points=[[0,0.5],[1,0.5]];portConstraint=eastwest;" value="+string Klient" vertex="1">
+          <mxGeometry height="31" width="230" y="185.93333333333334" as="geometry" />
+        </mxCell>
+        <mxCell id="_bn_YdXfYaCvoLVPxMD2-8" parent="_bn_YdXfYaCvoLVPxMD2-1" style="line;strokeWidth=1;fillColor=none;align=left;verticalAlign=middle;spacingTop=-1;spacingLeft=3;spacingRight=3;rotatable=0;labelPosition=right;points=[];portConstraint=eastwest;strokeColor=inherit;" vertex="1">
+          <mxGeometry height="15" width="230" y="216.93333333333334" as="geometry" />
+        </mxCell>
+        <mxCell id="_bn_YdXfYaCvoLVPxMD2-9" parent="1" style="swimlane;fontStyle=1;align=center;verticalAlign=top;childLayout=stackLayout;horizontal=1;startSize=30.933333333333334;horizontalStack=0;resizeParent=1;resizeParentMax=0;resizeLast=0;collapsible=0;marginBottom=0;" value="Tootaja" vertex="1">
+          <mxGeometry height="231.93333333333334" width="189" x="440" y="130" as="geometry" />
+        </mxCell>
+        <mxCell id="_bn_YdXfYaCvoLVPxMD2-10" parent="_bn_YdXfYaCvoLVPxMD2-9" style="text;strokeColor=none;fillColor=none;align=left;verticalAlign=top;spacingLeft=4;spacingRight=4;overflow=hidden;rotatable=0;points=[[0,0.5],[1,0.5]];portConstraint=eastwest;" value="+int Id" vertex="1">
+          <mxGeometry height="31" width="189" y="30.933333333333334" as="geometry" />
+        </mxCell>
+        <mxCell id="_bn_YdXfYaCvoLVPxMD2-11" parent="_bn_YdXfYaCvoLVPxMD2-9" style="text;strokeColor=none;fillColor=none;align=left;verticalAlign=top;spacingLeft=4;spacingRight=4;overflow=hidden;rotatable=0;points=[[0,0.5],[1,0.5]];portConstraint=eastwest;" value="+string Eesnimi" vertex="1">
+          <mxGeometry height="31" width="189" y="61.93333333333334" as="geometry" />
+        </mxCell>
+        <mxCell id="_bn_YdXfYaCvoLVPxMD2-12" parent="_bn_YdXfYaCvoLVPxMD2-9" style="text;strokeColor=none;fillColor=none;align=left;verticalAlign=top;spacingLeft=4;spacingRight=4;overflow=hidden;rotatable=0;points=[[0,0.5],[1,0.5]];portConstraint=eastwest;" value="+string Perenimi" vertex="1">
+          <mxGeometry height="31" width="189" y="92.93333333333334" as="geometry" />
+        </mxCell>
+        <mxCell id="_bn_YdXfYaCvoLVPxMD2-13" parent="_bn_YdXfYaCvoLVPxMD2-9" style="text;strokeColor=none;fillColor=none;align=left;verticalAlign=top;spacingLeft=4;spacingRight=4;overflow=hidden;rotatable=0;points=[[0,0.5],[1,0.5]];portConstraint=eastwest;" value="+string Email" vertex="1">
+          <mxGeometry height="31" width="189" y="123.93333333333334" as="geometry" />
+        </mxCell>
+        <mxCell id="_bn_YdXfYaCvoLVPxMD2-14" parent="_bn_YdXfYaCvoLVPxMD2-9" style="text;strokeColor=none;fillColor=none;align=left;verticalAlign=top;spacingLeft=4;spacingRight=4;overflow=hidden;rotatable=0;points=[[0,0.5],[1,0.5]];portConstraint=eastwest;" value="+string Telefon" vertex="1">
+          <mxGeometry height="31" width="189" y="154.93333333333334" as="geometry" />
+        </mxCell>
+        <mxCell id="_bn_YdXfYaCvoLVPxMD2-15" parent="_bn_YdXfYaCvoLVPxMD2-9" style="text;strokeColor=none;fillColor=none;align=left;verticalAlign=top;spacingLeft=4;spacingRight=4;overflow=hidden;rotatable=0;points=[[0,0.5],[1,0.5]];portConstraint=eastwest;" value="+decimal Tunnitasu" vertex="1">
+          <mxGeometry height="31" width="189" y="185.93333333333334" as="geometry" />
+        </mxCell>
+        <mxCell id="_bn_YdXfYaCvoLVPxMD2-16" parent="_bn_YdXfYaCvoLVPxMD2-9" style="line;strokeWidth=1;fillColor=none;align=left;verticalAlign=middle;spacingTop=-1;spacingLeft=3;spacingRight=3;rotatable=0;labelPosition=right;points=[];portConstraint=eastwest;strokeColor=inherit;" vertex="1">
+          <mxGeometry height="15" width="189" y="216.93333333333334" as="geometry" />
+        </mxCell>
+        <mxCell id="_bn_YdXfYaCvoLVPxMD2-17" parent="1" style="swimlane;fontStyle=1;align=center;verticalAlign=top;childLayout=stackLayout;horizontal=1;startSize=30.933333333333334;horizontalStack=0;resizeParent=1;resizeParentMax=0;resizeLast=0;collapsible=0;marginBottom=0;" value="Ulesanne" vertex="1">
+          <mxGeometry height="231.93333333333334" width="217" x="296" y="444" as="geometry" />
+        </mxCell>
+        <mxCell id="_bn_YdXfYaCvoLVPxMD2-18" parent="_bn_YdXfYaCvoLVPxMD2-17" style="text;strokeColor=none;fillColor=none;align=left;verticalAlign=top;spacingLeft=4;spacingRight=4;overflow=hidden;rotatable=0;points=[[0,0.5],[1,0.5]];portConstraint=eastwest;" value="+int Id" vertex="1">
+          <mxGeometry height="31" width="217" y="30.933333333333334" as="geometry" />
+        </mxCell>
+        <mxCell id="_bn_YdXfYaCvoLVPxMD2-19" parent="_bn_YdXfYaCvoLVPxMD2-17" style="text;strokeColor=none;fillColor=none;align=left;verticalAlign=top;spacingLeft=4;spacingRight=4;overflow=hidden;rotatable=0;points=[[0,0.5],[1,0.5]];portConstraint=eastwest;" value="+string Nimi" vertex="1">
+          <mxGeometry height="31" width="217" y="61.93333333333334" as="geometry" />
+        </mxCell>
+        <mxCell id="_bn_YdXfYaCvoLVPxMD2-20" parent="_bn_YdXfYaCvoLVPxMD2-17" style="text;strokeColor=none;fillColor=none;align=left;verticalAlign=top;spacingLeft=4;spacingRight=4;overflow=hidden;rotatable=0;points=[[0,0.5],[1,0.5]];portConstraint=eastwest;" value="+string Kirjeldus" vertex="1">
+          <mxGeometry height="31" width="217" y="92.93333333333334" as="geometry" />
+        </mxCell>
+        <mxCell id="_bn_YdXfYaCvoLVPxMD2-21" parent="_bn_YdXfYaCvoLVPxMD2-17" style="text;strokeColor=none;fillColor=none;align=left;verticalAlign=top;spacingLeft=4;spacingRight=4;overflow=hidden;rotatable=0;points=[[0,0.5],[1,0.5]];portConstraint=eastwest;" value="+DateTime Tahtaeg" vertex="1">
+          <mxGeometry height="31" width="217" y="123.93333333333334" as="geometry" />
+        </mxCell>
+        <mxCell id="_bn_YdXfYaCvoLVPxMD2-22" parent="_bn_YdXfYaCvoLVPxMD2-17" style="text;strokeColor=none;fillColor=none;align=left;verticalAlign=top;spacingLeft=4;spacingRight=4;overflow=hidden;rotatable=0;points=[[0,0.5],[1,0.5]];portConstraint=eastwest;" value="+string Staatus" vertex="1">
+          <mxGeometry height="31" width="217" y="154.93333333333334" as="geometry" />
+        </mxCell>
+        <mxCell id="_bn_YdXfYaCvoLVPxMD2-23" parent="_bn_YdXfYaCvoLVPxMD2-17" style="text;strokeColor=none;fillColor=none;align=left;verticalAlign=top;spacingLeft=4;spacingRight=4;overflow=hidden;rotatable=0;points=[[0,0.5],[1,0.5]];portConstraint=eastwest;" value="+decimal TunnidKokku" vertex="1">
+          <mxGeometry height="31" width="217" y="185.93333333333334" as="geometry" />
+        </mxCell>
+        <mxCell id="_bn_YdXfYaCvoLVPxMD2-24" parent="_bn_YdXfYaCvoLVPxMD2-17" style="line;strokeWidth=1;fillColor=none;align=left;verticalAlign=middle;spacingTop=-1;spacingLeft=3;spacingRight=3;rotatable=0;labelPosition=right;points=[];portConstraint=eastwest;strokeColor=inherit;" vertex="1">
+          <mxGeometry height="15" width="217" y="216.93333333333334" as="geometry" />
+        </mxCell>
+        <mxCell id="_bn_YdXfYaCvoLVPxMD2-25" edge="1" parent="1" source="_bn_YdXfYaCvoLVPxMD2-1" style="curved=1;startArrow=none;endArrow=open;endSize=12;exitX=0.5;exitY=1;entryX=0.04;entryY=0;rounded=0;" target="_bn_YdXfYaCvoLVPxMD2-17" value="sisaldab">
+          <mxGeometry relative="1" as="geometry">
+            <Array as="points">
+              <mxPoint x="275" y="407" />
+            </Array>
+          </mxGeometry>
+        </mxCell>
+        <mxCell id="_bn_YdXfYaCvoLVPxMD2-26" parent="_bn_YdXfYaCvoLVPxMD2-25" style="edgeLabel;resizable=0;labelBackgroundColor=none;fontSize=12;align=right;verticalAlign=top;" value="1" vertex="1">
+          <mxGeometry relative="1" x="-1" as="geometry" />
+        </mxCell>
+        <mxCell id="_bn_YdXfYaCvoLVPxMD2-27" parent="_bn_YdXfYaCvoLVPxMD2-25" style="edgeLabel;resizable=0;labelBackgroundColor=none;fontSize=12;align=left;verticalAlign=bottom;" value="1..*" vertex="1">
+          <mxGeometry relative="1" x="1" as="geometry" />
+        </mxCell>
+        <mxCell id="_bn_YdXfYaCvoLVPxMD2-28" edge="1" parent="1" source="_bn_YdXfYaCvoLVPxMD2-9" style="curved=1;startArrow=none;endArrow=open;endSize=12;exitX=0.5;exitY=1;entryX=0.96;entryY=0;rounded=0;" target="_bn_YdXfYaCvoLVPxMD2-17" value="täidab">
+          <mxGeometry relative="1" as="geometry">
+            <Array as="points">
+              <mxPoint x="535" y="407" />
+            </Array>
+          </mxGeometry>
+        </mxCell>
+        <mxCell id="_bn_YdXfYaCvoLVPxMD2-29" parent="_bn_YdXfYaCvoLVPxMD2-28" style="edgeLabel;resizable=0;labelBackgroundColor=none;fontSize=12;align=right;verticalAlign=top;" value="1" vertex="1">
+          <mxGeometry relative="1" x="-1" as="geometry" />
+        </mxCell>
+        <mxCell id="_bn_YdXfYaCvoLVPxMD2-30" parent="_bn_YdXfYaCvoLVPxMD2-28" style="edgeLabel;resizable=0;labelBackgroundColor=none;fontSize=12;align=left;verticalAlign=bottom;" value="0..*" vertex="1">
+          <mxGeometry relative="1" x="1" as="geometry" />
+        </mxCell>
+      </root>
+    </mxGraphModel>
+  </diagram>
+</mxfile>
