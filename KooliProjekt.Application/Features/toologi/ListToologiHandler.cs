@@ -9,7 +9,7 @@ using Microsoft.EntityFrameworkCore;
 
 namespace KooliProjekt.Application.Features.toologi
 {
-	public class ListToologiHandler : IRequestHandler<ListToologi, OperationResult<PagedResult<toologi>>>
+	public class ListToologiHandler : IRequestHandler<ListToologi, OperationResult<PagedResult<Data.toologi>>>
 	{
 		private readonly ApplicationDbContext _dbContext;
 
@@ -18,9 +18,9 @@ namespace KooliProjekt.Application.Features.toologi
 			_dbContext = dbContext;
 		}
 
-		public async Task<OperationResult<PagedResult<toologi>>> Handle(ListToologi request, CancellationToken cancellationToken)
+		public async Task<OperationResult<PagedResult<Data.toologi>>> Handle(ListToologi request, CancellationToken cancellationToken)
 		{
-			var result = new OperationResult<PagedResult<toologi>>();
+			var result = new OperationResult<PagedResult<Data.toologi>>();
 
 			result.Value = await _dbContext
 				.Toologid

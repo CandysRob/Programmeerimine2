@@ -20,7 +20,7 @@ namespace KooliProjekt.Application.Features.toologi
         {
             var result = new OperationResult();
 
-            var toologi = new toologi();
+            var toologi = new Data.toologi();
             if (request.Id != 0)
             {
                 toologi = await _toologiRepository.GetByIdAsync(request.Id);

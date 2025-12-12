@@ -5,7 +5,7 @@ using MediatR;
 
 namespace KooliProjekt.Application.Features.toologi
 {
-	public class ListToologi : IRequest<OperationResult<PagedResult<toologi>>>
+	public class ListToologi : IRequest<OperationResult<PagedResult<Data.toologi>>>
 	{
 		public int Page { get; set; }
 		public int PageSize { get; set; }
