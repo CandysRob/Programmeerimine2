@@ -1,5 +1,4 @@
-﻿using System;
-using System.Linq;
+﻿using System.Linq;
 using System.Threading;
 using System.Threading.Tasks;
 using KooliProjekt.Application.Data;
@@ -26,14 +25,15 @@ namespace KooliProjekt.Application.Features.ToDoLists
                 .ToDoLists
                 .Include(list => list.Items)
                 .Where(list => list.Id == request.Id)
-                .Select(list => new
+                .Select(list => new // Anonymous object
                 {
                     Id = list.Id,
                     Title = list.Title,
                     Items = list.Items.Select(item => new
-                    { 
-                        item.Id, 
-                        item.Title 
+                    {
+                        Id = item.Id,
+                        Title = item.Title,
+                        IsDone = item.IsDone
                     })
                 })
                 .FirstOrDefaultAsync();

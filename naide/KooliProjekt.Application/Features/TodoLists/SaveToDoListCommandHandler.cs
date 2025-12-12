@@ -8,7 +8,6 @@ using KooliProjekt.Application.Data;
 using KooliProjekt.Application.Infrastructure.Paging;
 using KooliProjekt.Application.Infrastructure.Results;
 using MediatR;
-using Microsoft.CodeAnalysis.CSharp.Syntax;
 
 namespace KooliProjekt.Application.Features.ToDoLists
 {
@@ -33,11 +32,10 @@ namespace KooliProjekt.Application.Features.ToDoLists
             else
             {
                 list = await _dbContext.ToDoLists.FindAsync(request.Id);
-                //_dbContext.ToDoLists.Update(list);
             }
 
             list.Title = request.Title;
-            
+
             await _dbContext.SaveChangesAsync();
 
             return result;

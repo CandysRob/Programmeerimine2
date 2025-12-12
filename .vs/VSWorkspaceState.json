@@ -11,6 +11,6 @@
     "\\KooliProjekt.WebAPI\\Controllers",
     "\\naide"
   ],
-  "SelectedNode": "\\KooliProjekt.Application\\Data\\ApplicationDbContext.cs",
+  "SelectedNode": "\\KooliProjekt.WebAPI\\Controllers\\ToologidController.cs",
   "PreviewInSolutionExplorer": false
 }
