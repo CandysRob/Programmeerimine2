@@ -2,7 +2,11 @@
   "ExpandedNodes": [
     "",
     "\\KooliProjekt.Application",
-    "\\KooliProjekt.Application\\Data"
+    "\\KooliProjekt.Application\\Data",
+    "\\KooliProjekt.Application\\Features",
+    "\\KooliProjekt.Application\\Features\\toologi",
+    "\\naide"
   ],
+  "SelectedNode": "\\KooliProjekt.Application\\Data\\ApplicationDbContext.cs",
   "PreviewInSolutionExplorer": false
 }

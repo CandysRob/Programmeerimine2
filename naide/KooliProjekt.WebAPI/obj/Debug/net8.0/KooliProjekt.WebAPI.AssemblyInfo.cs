@@ -14,7 +14,7 @@ using System.Reflection;
 [assembly: System.Reflection.AssemblyCompanyAttribute("KooliProjekt.WebAPI")]
 [assembly: System.Reflection.AssemblyConfigurationAttribute("Debug")]
 [assembly: System.Reflection.AssemblyFileVersionAttribute("1.0.0.0")]
-[assembly: System.Reflection.AssemblyInformationalVersionAttribute("1.0.0+d9873eacab34e2e740da7a4ec40330acea10a9ee")]
+[assembly: System.Reflection.AssemblyInformationalVersionAttribute("1.0.0+4552d103a4467b2764cf35ecb69d75c4d78b04a8")]
 [assembly: System.Reflection.AssemblyProductAttribute("KooliProjekt.WebAPI")]
 [assembly: System.Reflection.AssemblyTitleAttribute("KooliProjekt.WebAPI")]
 [assembly: System.Reflection.AssemblyVersionAttribute("1.0.0.0")]
