@@ -7,8 +7,7 @@ namespace KooliProjekt.Application.Data
         public int Id { get; set; }
 
         [Required]
-        [MaxLength(50)]
-        [MinLength(1)]
+        [StringLength(50)]
         public string Title { get; set; }
         public bool IsDone { get; set; }
 
