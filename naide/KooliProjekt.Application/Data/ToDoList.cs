@@ -1,17 +1,14 @@
-﻿using System.Collections.Generic;
-using System.ComponentModel.DataAnnotations;
+﻿using System;
+using System.Collections.Generic;
+using System.Linq;
+using System.Text;
+using System.Threading.Tasks;
 
 namespace KooliProjekt.Application.Data
 {
     public class ToDoList
     {
         public int Id { get; set; }
-
-        [Required]
-        [MaxLength(50)]
-        [MinLength(1)]
-        public string Title { get; set; }
-
-        public IList<ToDoItem> Items { get; set; }
+        public string Name { get; set; }
     }
 }
