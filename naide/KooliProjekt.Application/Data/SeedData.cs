@@ -6,50 +6,63 @@ using System.Threading.Tasks;
 
 namespace KooliProjekt.Application.Data
 {
-    /// <summary>
-    /// 14.11.2025
-    /// Testandmete generaator
-    /// 
-    /// Testandmed genereeritakse ainult siis kui mõni oluline 
-    /// tabel on tühi.
-    /// </summary>
+    // 15.11.2025
+    // SeedData klass andmete genereerimiseks
     public class SeedData
     {
         private readonly ApplicationDbContext _dbContext;
+        private readonly IList<ToDoList> _toDoLists = new List<ToDoList>();
 
-        public SeedData(ApplicationDbContext dbContext)
+        public SeedData(ApplicationDbContext context)
         {
-            _dbContext = dbContext;
+            _dbContext = context;
         }
 
-        /// <summary>
-        /// Genereerib andmed
-        /// </summary>
+        // Generate meetod koordineerib andmete genereerimist
         public void Generate()
         {
-            if(_dbContext.ToDoLists.Any())
+            // Ära tee midagi kui andmed on juba olemas
+            if (_dbContext.ToDoLists.Any())
             {
                 return;
             }
 
-            for(var i = 0; i < 10; i++)
-            {
-                var list = new ToDoList { Title = "List " + (i + 1) };
-                _dbContext.ToDoLists.Add(list);
-
-                for(var j = 0; j < 5; j++)
-                {
-                    var item = new ToDoItem
-                    {
-                        Title = "Item " + (i + 1) + "." + (j + 1),
-                        IsDone = false,
-                        ToDoList = list
-                    };
-                    _dbContext.ToDoItems.Add(item);
-                }
-            }
+            GenerateToDoLists();
+            GenerateToDoItems();
 
             _dbContext.SaveChanges();
+        }
+
+        private void GenerateToDoLists()
+        {
+            for(var i = 0; i < 10; i++)
+            {
+                var toDoList = new ToDoList
+                {
+                    Title = $"List {i + 1}"
+                };
+
+                _toDoLists.Add(toDoList);
+            }
+
+            _dbContext.ToDoLists.AddRange(_toDoLists);
+        }
+
+        private void GenerateToDoItems()
+        {
+            foreach(var list in _toDoLists)
+            {
+                for(var j = 0; j < 5; j++)
+                {
+                    var toDoItem = new ToDoItem
+                    {
+                        Title = $"{list.Title}, Item {j + 1}",
+                        ToDoListId = list.Id
+                    };
+                    
+                    list.Items.Add(toDoItem);
+                }
+            }
         }
     }
 }

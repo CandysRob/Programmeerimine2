@@ -1,37 +1,39 @@
-using System.Linq;
 using System.Threading;
 using System.Threading.Tasks;
 using KooliProjekt.Application.Data;
+using KooliProjekt.Application.Data.Repositories;
 using KooliProjekt.Application.Infrastructure.Results;
 using MediatR;
-using Microsoft.EntityFrameworkCore;
 
 namespace KooliProjekt.Application.Features.Tootajad
 {
     public class GetTootajaQueryHandler : IRequestHandler<GetTootajaQuery, OperationResult<object>>
     {
-        private readonly ApplicationDbContext _dbContext;
+        private readonly ITootajaRepository _tootajaRepository;
 
-        public GetTootajaQueryHandler(ApplicationDbContext dbContext)
+        public GetTootajaQueryHandler(ITootajaRepository tootajaRepository)
         {
-            _dbContext = dbContext;
+            _tootajaRepository = tootajaRepository;
         }
 
         public async Task<OperationResult<object>> Handle(GetTootajaQuery request, CancellationToken cancellationToken)
         {
             var result = new OperationResult<object>();
+            var tootaja = await _tootajaRepository.GetByIdAsync(request.Id);
 
-            result.Value = await _dbContext
-                .Tootajad
-                .Where(t => t.Id == request.Id)
-                .Select(t => new
-                {
-                    t.Id,
-                    t.Nimi,
-                    t.Email,
-                    t.Ametikoht
-                })
-                .FirstOrDefaultAsync(cancellationToken);
+            if (tootaja == null)
+            {
+                result.Value = null;
+                return result;
+            }
+
+            result.Value = new
+            {
+                tootaja.Id,
+                tootaja.Nimi,
+                tootaja.Email,
+                tootaja.Ametikoht
+            };
 
             return result;
         }

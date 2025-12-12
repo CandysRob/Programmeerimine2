@@ -1,51 +1,43 @@
-using System.Linq;
 using System.Threading;
 using System.Threading.Tasks;
 using KooliProjekt.Application.Data;
+using KooliProjekt.Application.Data.Repositories;
 using KooliProjekt.Application.Infrastructure.Results;
 using MediatR;
-using Microsoft.EntityFrameworkCore;
 
 namespace KooliProjekt.Application.Features.Ylesanded
 {
     public class GetYlesanneQueryHandler : IRequestHandler<GetYlesanneQuery, OperationResult<object>>
     {
-        private readonly ApplicationDbContext _dbContext;
+        private readonly IYlesanneRepository _ylesanneRepository;
 
-        public GetYlesanneQueryHandler(ApplicationDbContext dbContext)
+        public GetYlesanneQueryHandler(IYlesanneRepository ylesanneRepository)
         {
-            _dbContext = dbContext;
+            _ylesanneRepository = ylesanneRepository;
         }
 
         public async Task<OperationResult<object>> Handle(GetYlesanneQuery request, CancellationToken cancellationToken)
         {
             var result = new OperationResult<object>();
+            var y = await _ylesanneRepository.GetByIdAsync(request.Id);
 
-            result.Value = await _dbContext
-                .Ylesanded
-                .Include(y => y.Projekt)
-                .Include(y => y.Tootaja)
-                .Where(y => y.Id == request.Id)
-                .Select(y => new
-                {
-                    y.Id,
-                    y.Pealkiri,
-                    y.Kirjeldus,
-                    y.Tahtaeg,
-                    y.Staatus,
-                    y.TunnidKokku,
-                    Projekt = new
-                    {
-                        y.Projekt.Id,
-                        y.Projekt.Nimi
-                    },
-                    Tootaja = new
-                    {
-                        y.Tootaja.Id,
-                        y.Tootaja.Nimi
-                    }
-                })
-                .FirstOrDefaultAsync(cancellationToken);
+            if (y == null)
+            {
+                result.Value = null;
+                return result;
+            }
+
+            result.Value = new
+            {
+                y.Id,
+                y.Pealkiri,
+                y.Kirjeldus,
+                y.Tahtaeg,
+                y.Staatus,
+                y.TunnidKokku,
+                ProjektId = y.ProjektId,
+                TootajaId = y.TootajaId
+            };
 
             return result;
         }

@@ -1,23 +1,21 @@
-﻿using System;
-using System.Collections.Generic;
-using System.Linq;
-using System.Text;
-using System.Threading;
+﻿using System.Threading;
 using System.Threading.Tasks;
 using KooliProjekt.Application.Data;
-using KooliProjekt.Application.Infrastructure.Paging;
+using KooliProjekt.Application.Data.Repositories;
 using KooliProjekt.Application.Infrastructure.Results;
 using MediatR;
 
 namespace KooliProjekt.Application.Features.ToDoLists
 {
+    // 28.11
+    // Kasutab IToDoListRepositoryt
     public class SaveToDoListCommandHandler : IRequestHandler<SaveToDoListCommand, OperationResult>
     {
-        private readonly ApplicationDbContext _dbContext;
+        private readonly IToDoListRepository _toDoListRepository;
 
-        public SaveToDoListCommandHandler(ApplicationDbContext dbContext)
+        public SaveToDoListCommandHandler(IToDoListRepository toDoListRepository)
         {
-            _dbContext = dbContext;
+            _toDoListRepository = toDoListRepository;
         }
 
         public async Task<OperationResult> Handle(SaveToDoListCommand request, CancellationToken cancellationToken)
@@ -25,18 +23,14 @@ namespace KooliProjekt.Application.Features.ToDoLists
             var result = new OperationResult();
 
             var list = new ToDoList();
-            if(request.Id == 0)
+            if(request.Id != 0)
             {
-                await _dbContext.ToDoLists.AddAsync(list);
-            }
-            else
-            {
-                list = await _dbContext.ToDoLists.FindAsync(request.Id);
+                list = await _toDoListRepository.GetByIdAsync(request.Id);
             }
 
             list.Title = request.Title;
 
-            await _dbContext.SaveChangesAsync();
+            await _toDoListRepository.SaveAsync(list);
 
             return result;
         }

@@ -1,38 +1,40 @@
-using System.Linq;
 using System.Threading;
 using System.Threading.Tasks;
 using KooliProjekt.Application.Data;
+using KooliProjekt.Application.Data.Repositories;
 using KooliProjekt.Application.Infrastructure.Results;
 using MediatR;
-using Microsoft.EntityFrameworkCore;
 
 namespace KooliProjekt.Application.Features.toologi
 {
     public class GetToologiQueryHandler : IRequestHandler<GetToologiQuery, OperationResult<object>>
     {
-        private readonly ApplicationDbContext _dbContext;
+        private readonly IToologiRepository _toologiRepository;
 
-        public GetToologiQueryHandler(ApplicationDbContext dbContext)
+        public GetToologiQueryHandler(IToologiRepository toologiRepository)
         {
-            _dbContext = dbContext;
+            _toologiRepository = toologiRepository;
         }
 
         public async Task<OperationResult<object>> Handle(GetToologiQuery request, CancellationToken cancellationToken)
         {
             var result = new OperationResult<object>();
+            var t = await _toologiRepository.GetByIdAsync(request.Id);
 
-            result.Value = await _dbContext
-                .Toologid
-                .Where(t => t.Id == request.Id)
-                .Select(t => new
-                {
-                    t.Id,
-                    t.Nimi,
-                    t.starttime,
-                    t.endtime,
-                    t.Kirjeldus
-                })
-                .FirstOrDefaultAsync(cancellationToken);
+            if (t == null)
+            {
+                result.Value = null;
+                return result;
+            }
+
+            result.Value = new
+            {
+                t.Id,
+                t.Nimi,
+                t.starttime,
+                t.endtime,
+                t.Kirjeldus
+            };
 
             return result;
         }

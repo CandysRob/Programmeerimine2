@@ -1,6 +1,7 @@
 using System.Threading;
 using System.Threading.Tasks;
 using KooliProjekt.Application.Data;
+using KooliProjekt.Application.Data.Repositories;
 using KooliProjekt.Application.Infrastructure.Results;
 using MediatR;
 
@@ -8,11 +9,11 @@ namespace KooliProjekt.Application.Features.toologi
 {
     public class SaveToologiCommandHandler : IRequestHandler<SaveToologiCommand, OperationResult>
     {
-        private readonly ApplicationDbContext _dbContext;
+        private readonly IToologiRepository _toologiRepository;
 
-        public SaveToologiCommandHandler(ApplicationDbContext dbContext)
+        public SaveToologiCommandHandler(IToologiRepository toologiRepository)
         {
-            _dbContext = dbContext;
+            _toologiRepository = toologiRepository;
         }
 
         public async Task<OperationResult> Handle(SaveToologiCommand request, CancellationToken cancellationToken)
@@ -20,13 +21,9 @@ namespace KooliProjekt.Application.Features.toologi
             var result = new OperationResult();
 
             var toologi = new toologi();
-            if (request.Id == 0)
+            if (request.Id != 0)
             {
-                await _dbContext.Toologid.AddAsync(toologi, cancellationToken);
-            }
-            else
-            {
-                toologi = await _dbContext.Toologid.FindAsync(new object[] { request.Id }, cancellationToken);
+                toologi = await _toologiRepository.GetByIdAsync(request.Id);
             }
 
             toologi.Nimi = request.Nimi;
@@ -34,7 +31,7 @@ namespace KooliProjekt.Application.Features.toologi
             toologi.endtime = request.endtime;
             toologi.Kirjeldus = request.Kirjeldus;
 
-            await _dbContext.SaveChangesAsync(cancellationToken);
+            await _toologiRepository.SaveAsync(toologi);
 
             return result;
         }

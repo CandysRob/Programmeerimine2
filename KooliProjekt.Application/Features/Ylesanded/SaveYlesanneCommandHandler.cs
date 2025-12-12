@@ -1,6 +1,7 @@
 using System.Threading;
 using System.Threading.Tasks;
 using KooliProjekt.Application.Data;
+using KooliProjekt.Application.Data.Repositories;
 using KooliProjekt.Application.Infrastructure.Results;
 using MediatR;
 
@@ -8,11 +9,11 @@ namespace KooliProjekt.Application.Features.Ylesanded
 {
     public class SaveYlesanneCommandHandler : IRequestHandler<SaveYlesanneCommand, OperationResult>
     {
-        private readonly ApplicationDbContext _dbContext;
+        private readonly IYlesanneRepository _ylesanneRepository;
 
-        public SaveYlesanneCommandHandler(ApplicationDbContext dbContext)
+        public SaveYlesanneCommandHandler(IYlesanneRepository ylesanneRepository)
         {
-            _dbContext = dbContext;
+            _ylesanneRepository = ylesanneRepository;
         }
 
         public async Task<OperationResult> Handle(SaveYlesanneCommand request, CancellationToken cancellationToken)
@@ -20,13 +21,9 @@ namespace KooliProjekt.Application.Features.Ylesanded
             var result = new OperationResult();
 
             var ylesanne = new Ylesanne();
-            if (request.Id == 0)
+            if (request.Id != 0)
             {
-                await _dbContext.Ylesanded.AddAsync(ylesanne, cancellationToken);
-            }
-            else
-            {
-                ylesanne = await _dbContext.Ylesanded.FindAsync(new object[] { request.Id }, cancellationToken);
+                ylesanne = await _ylesanneRepository.GetByIdAsync(request.Id);
             }
 
             ylesanne.Pealkiri = request.Pealkiri;
@@ -37,7 +34,7 @@ namespace KooliProjekt.Application.Features.Ylesanded
             ylesanne.ProjektId = request.ProjektId;
             ylesanne.TootajaId = request.TootajaId;
 
-            await _dbContext.SaveChangesAsync(cancellationToken);
+            await _ylesanneRepository.SaveAsync(ylesanne);
 
             return result;
         }
