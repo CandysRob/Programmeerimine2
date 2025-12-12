@@ -1,22 +1,22 @@
 using System.Threading.Tasks;
-using KooliProjekt.Application.Features.Projektid;
+using KooliProjekt.Application.Features.toologi;
 using MediatR;
 using Microsoft.AspNetCore.Mvc;
 
 namespace KooliProjekt.WebAPI.Controllers
 {
-    public class ProjektidController : ApiControllerBase
+    public class ToologidController : ApiControllerBase
     {
         private readonly IMediator _mediator;
-        
-        public ProjektidController(IMediator mediator)
+
+        public ToologidController(IMediator mediator)
         {
             _mediator = mediator;
         }
 
         [HttpGet]
         [Route("List")]
-        public async Task<IActionResult> List([FromQuery] ListProjektidQuery query)
+        public async Task<IActionResult> List([FromQuery] ListToologi query)
         {
             var response = await _mediator.Send(query);
 
@@ -27,7 +27,7 @@ namespace KooliProjekt.WebAPI.Controllers
         [Route("Get")]
         public async Task<IActionResult> Get(int id)
         {
-            var query = new GetProjektQuery { Id = id };
+            var query = new GetToologiQuery { Id = id };
             var response = await _mediator.Send(query);
 
             return Result(response);
@@ -35,7 +35,7 @@ namespace KooliProjekt.WebAPI.Controllers
 
         [HttpPost]
         [Route("Save")]
-        public async Task<IActionResult> Save(SaveProjektCommand command)
+        public async Task<IActionResult> Save(SaveToologiCommand command)
         {
             var response = await _mediator.Send(command);
 

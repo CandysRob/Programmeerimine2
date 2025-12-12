@@ -16,9 +16,41 @@ namespace KooliProjekt.WebAPI.Controllers
         }
 
         [HttpGet]
+        [Route("List")]
         public async Task<IActionResult> List([FromQuery] ListToDoListsQuery query)
         {
             var response = await _mediator.Send(query);
+
+            return Result(response);
+        }
+
+        [HttpGet]
+        [Route("Get")]
+        public async Task<IActionResult> Get(int id)
+        {
+            var query = new GetToDoListQuery { Id = id };
+            var response = await _mediator.Send(query);
+
+            return Result(response);
+        }
+
+        [HttpPost]
+        [Route("Save")]
+        public async Task<IActionResult> Save(SaveToDoListCommand command)
+        {
+            var response = await _mediator.Send(command);
+
+            return Result(response);
+        }
+
+
+        // 14.11.2025
+        // Delete meetod listi kustutamiseks
+        [HttpDelete]
+        [Route("Delete")]
+        public async Task<IActionResult> Delete(DeleteToDoListCommand command)
+        {
+            var response = await _mediator.Send(command);
 
             return Result(response);
         }

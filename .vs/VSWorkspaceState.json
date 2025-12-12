@@ -2,7 +2,15 @@
   "ExpandedNodes": [
     "",
     "\\KooliProjekt.Application",
-    "\\KooliProjekt.Application\\Data"
+    "\\KooliProjekt.Application\\Features",
+    "\\KooliProjekt.Application\\Features\\Projektid",
+    "\\KooliProjekt.Application\\Features\\toologi",
+    "\\KooliProjekt.Application\\Features\\Tootajad",
+    "\\KooliProjekt.Application\\Features\\Ylesanded",
+    "\\KooliProjekt.WebAPI",
+    "\\KooliProjekt.WebAPI\\Controllers",
+    "\\naide"
   ],
+  "SelectedNode": "\\KooliProjekt.WebAPI\\Controllers\\ToologidController.cs",
   "PreviewInSolutionExplorer": false
 }

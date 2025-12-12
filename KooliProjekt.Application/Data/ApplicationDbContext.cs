@@ -19,5 +19,6 @@ namespace KooliProjekt.Application.Data
         public DbSet<Projekt> Projektid { get; set; }
         public DbSet<Tootaja> Tootajad { get; set; }
         public DbSet<Ylesanne> Ylesanded { get; set; }
+        public DbSet<toologi> Toologid { get; set; }
     }
 }

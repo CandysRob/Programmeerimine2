@@ -9,7 +9,6 @@ namespace KooliProjekt.Application.Data
 
         [Required]
         [MaxLength(50)]
-        [MinLength(1)]
         public string Title { get; set; }
 
         public IList<ToDoItem> Items { get; set; }

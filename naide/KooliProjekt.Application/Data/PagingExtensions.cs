@@ -1,7 +1,5 @@
 ﻿using System;
-using System.Collections.Generic;
 using System.Linq;
-using System.Text;
 using System.Threading.Tasks;
 using KooliProjekt.Application.Infrastructure.Paging;
 using Microsoft.EntityFrameworkCore;
@@ -33,6 +31,7 @@ namespace KooliProjekt.Application.Data
                 .Skip(skip)
                 .Take(pageSize)
                 .ToListAsync();
+                
 
             return result;
         }
