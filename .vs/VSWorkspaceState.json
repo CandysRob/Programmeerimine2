@@ -3,14 +3,14 @@
     "",
     "\\KooliProjekt.Application",
     "\\KooliProjekt.Application\\Features",
-    "\\KooliProjekt.Application\\Features\\Projektid",
-    "\\KooliProjekt.Application\\Features\\toologi",
     "\\KooliProjekt.Application\\Features\\Tootajad",
-    "\\KooliProjekt.Application\\Features\\Ylesanded",
     "\\KooliProjekt.WebAPI",
     "\\KooliProjekt.WebAPI\\Controllers",
-    "\\naide"
+    "\\naide",
+    "\\naide\\KooliProjekt.Application",
+    "\\naide\\KooliProjekt.Application\\Features",
+    "\\naide\\KooliProjekt.Application\\Features\\TodoLists"
   ],
-  "SelectedNode": "\\KooliProjekt.WebAPI\\Controllers\\ToologidController.cs",
+  "SelectedNode": "\\KooliProjekt.WebAPI\\Controllers\\YlesandedController.cs",
   "PreviewInSolutionExplorer": false
 }

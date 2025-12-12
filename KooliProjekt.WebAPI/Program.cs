@@ -39,6 +39,8 @@ namespace KooliProjekt.WebAPI
                 config.AddOpenBehavior(typeof(TransactionalBehavior<,>));
             });
 
+            builder.Services.AddTransient<SeedData>();
+
             var app = builder.Build();
 
             // Configure the HTTP request pipeline.
@@ -52,6 +54,12 @@ namespace KooliProjekt.WebAPI
 
 
             app.MapControllers();
+
+            using (var scope = app.Services.CreateScope())
+            {
+                var seed = scope.ServiceProvider.GetRequiredService<SeedData>();
+                seed.Generate();
+            }
 
             app.Run();
         }
