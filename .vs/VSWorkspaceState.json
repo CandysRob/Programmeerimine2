@@ -3,7 +3,7 @@
     "",
     "\\KooliProjekt.Application",
     "\\KooliProjekt.Application\\Features",
-    "\\KooliProjekt.Application\\Features\\Tootajad",
+    "\\KooliProjekt.Application\\Features\\Ylesanded",
     "\\KooliProjekt.WebAPI",
     "\\KooliProjekt.WebAPI\\Controllers",
     "\\naide",
@@ -11,6 +11,6 @@
     "\\naide\\KooliProjekt.Application\\Features",
     "\\naide\\KooliProjekt.Application\\Features\\TodoLists"
   ],
-  "SelectedNode": "\\KooliProjekt.WebAPI\\Controllers\\YlesandedController.cs",
+  "SelectedNode": "\\KooliProjekt.WebAPI\\Program.cs",
   "PreviewInSolutionExplorer": false
 }

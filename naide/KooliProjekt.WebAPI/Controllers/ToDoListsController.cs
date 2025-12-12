@@ -43,9 +43,8 @@ namespace KooliProjekt.WebAPI.Controllers
             return Result(response);
         }
 
-
-        // 14.11.2025
-        // Delete meetod listi kustutamiseks
+        // 15.11.2025
+        // API pöördumispunkt ToDoListi kustutamiseks
         [HttpDelete]
         [Route("Delete")]
         public async Task<IActionResult> Delete(DeleteToDoListCommand command)
