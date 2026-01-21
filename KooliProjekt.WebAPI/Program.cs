@@ -1,7 +1,6 @@
 using FluentValidation;
 using KooliProjekt.Application.Behaviors;
 using KooliProjekt.Application.Data;
-using KooliProjekt.Application.Data.Repositories;
 using Microsoft.AspNetCore.Builder;
 using Microsoft.EntityFrameworkCore;
 using Microsoft.Extensions.Configuration;
@@ -41,11 +40,6 @@ namespace KooliProjekt.WebAPI
             });
 
             builder.Services.AddTransient<SeedData>();
-
-            builder.Services.AddScoped<IProjektRepository, ProjektRepository>();
-            builder.Services.AddScoped<ITootajaRepository, TootajaRepository>();
-            builder.Services.AddScoped<IYlesanneRepository, YlesanneRepository>();
-            builder.Services.AddScoped<IToologiRepository, ToologiRepository>();
 
             var app = builder.Build();
 

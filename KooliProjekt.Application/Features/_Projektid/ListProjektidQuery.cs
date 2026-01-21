@@ -1,0 +1,14 @@
+using System.Collections.Generic;
+using KooliProjekt.Application.Data;
+using KooliProjekt.Application.Infrastructure.Paging;
+using KooliProjekt.Application.Infrastructure.Results;
+using MediatR;
+
+namespace KooliProjekt.Application.Features._Projektid
+{
+    public class ListProjektidQuery : IRequest<OperationResult<PagedResult<Projekt>>>
+    {
+        public int Page { get; set; }
+        public int PageSize { get; set; }
+    }
+}

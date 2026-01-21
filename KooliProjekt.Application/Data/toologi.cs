@@ -4,7 +4,7 @@ using System.ComponentModel.DataAnnotations;
 
 namespace KooliProjekt.Application.Data
 {
-    public class toologi : Entity
+    public class toologi
     {
         public int Id { get; set; }
 
