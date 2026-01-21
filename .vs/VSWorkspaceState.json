@@ -2,16 +2,15 @@
   "ExpandedNodes": [
     "",
     "\\KooliProjekt.Application",
-    "\\KooliProjekt.Application\\Data",
-    "\\KooliProjekt.Application\\Data\\Repositories",
+    "\\KooliProjekt.Application\\Features",
+    "\\KooliProjekt.Application\\Features\\Ylesanded",
     "\\KooliProjekt.WebAPI",
     "\\KooliProjekt.WebAPI\\Controllers",
     "\\naide",
     "\\naide\\KooliProjekt.Application",
     "\\naide\\KooliProjekt.Application\\Features",
-    "\\naide\\KooliProjekt.Application\\Features\\TodoLists",
-    "\\naide\\KooliProjekt.WebAPI"
+    "\\naide\\KooliProjekt.Application\\Features\\TodoLists"
   ],
-  "SelectedNode": "\\KooliProjekt.sln",
+  "SelectedNode": "\\KooliProjekt.WebAPI\\Program.cs",
   "PreviewInSolutionExplorer": false
 }

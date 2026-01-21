@@ -1,6 +1,6 @@
 namespace KooliProjekt.Application.Data.Repositories
 {
-    public class ToologiRepository : BaseRepository<Data.toologi>, IToologiRepository
+    public class ToologiRepository : BaseRepository<toologi>, IToologiRepository
     {
         public ToologiRepository(ApplicationDbContext dbContext) : base(dbContext)
         {
