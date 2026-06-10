@@ -1,0 +1,53 @@
+﻿@page "/Toologid"
+@inject IApiClient apiClient
+
+<PageTitle>Toologid Lists</PageTitle>
+
+<h1>Arve Lists</h1>
+
+@if (toolog == null)
+{
+    <p><em>Loading...</em></p>
+}
+else
+{
+    <p><a class="btn btn-primary" href="/create">Add new</a></p>
+    <table class="table">
+        <thead>
+            <tr>
+                <th>Id</th>
+                <th>Nimi</th>
+                <th>Start Time</th>
+                <th>End Time</th>
+                <th>Kirjeldus</th>
+                <th></th>
+            </tr>
+        </thead>
+        <tbody>
+            @foreach (var toologItem in toolog)
+            {
+                <tr>
+                    <td>@toologItem.Id</td>
+                    <td>@toologItem.Nimi</td>
+                    <td>@toologItem.starttime</td>
+                    <td>@toologItem.endtime</td>
+                    <td>@toologItem.Kirjeldus</td>
+                    <td>
+                        <a class="btn btn-success" href="/edit/@toologItem.Id">Edit</a>
+                        <button class="btn btn-danger">Delete</button>
+                    </td>
+                </tr>
+            }
+        </tbody>
+    </table>
+}
+
+@code {
+    private IList<toologi> toolog;
+
+    protected override async Task OnInitializedAsync()
+    {
+        var result = await apiClient.List(1, 50);
+        toolog = result.Value.Results;
+    }
+}

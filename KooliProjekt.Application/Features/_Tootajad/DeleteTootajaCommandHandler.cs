@@ -1,4 +1,7 @@
+﻿using System;
+using System.Collections.Generic;
 using System.Linq;
+using System.Text;
 using System.Threading;
 using System.Threading.Tasks;
 using KooliProjekt.Application.Data;
@@ -10,21 +13,44 @@ namespace KooliProjekt.Application.Features._Tootajad
 {
     public class DeleteTootajaCommandHandler : IRequestHandler<DeleteTootajaCommand, OperationResult>
     {
-        private readonly ApplicationDbContext _dbContext;
+        private readonly ApplicationDbContext _db_context;
 
-        public DeleteTootajaCommandHandler(ApplicationDbContext dbContext)
+        public DeleteTootajaCommandHandler(ApplicationDbContext db_context)
         {
-            _dbContext = dbContext;
+            if (db_context == null)
+            {
+                throw new ArgumentNullException(nameof(db_context));
+            }
+            _db_context = db_context;
         }
 
         public async Task<OperationResult> Handle(DeleteTootajaCommand request, CancellationToken cancellationToken)
         {
+            if (request == null)
+            {
+                throw new ArgumentNullException(nameof(request));
+            }
+
             var result = new OperationResult();
 
-            await _dbContext
+            if (request.Id <= 0)
+            {
+                return result;
+            }
+
+            var tootaja = await _db_context
                 .Tootajad
-                .Where(t => t.Id == request.Id)
-                .ExecuteDeleteAsync(cancellationToken);
+                .Where(a => a.Id == request.Id)
+                .FirstOrDefaultAsync();
+
+            if (tootaja == null)
+            {
+                return result;
+            }
+
+            _db_context.Remove(tootaja);
+
+            await _db_context.SaveChangesAsync();
 
             return result;
         }

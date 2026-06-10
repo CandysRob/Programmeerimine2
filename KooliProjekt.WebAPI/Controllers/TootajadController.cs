@@ -1,6 +1,7 @@
 using System.Threading.Tasks;
 using KooliProjekt.Application.Features._Tootajad;
 using MediatR;
+using Microsoft.AspNetCore.Http;
 using Microsoft.AspNetCore.Mvc;
 
 namespace KooliProjekt.WebAPI.Controllers
@@ -8,7 +9,6 @@ namespace KooliProjekt.WebAPI.Controllers
     public class TootajadController : ApiControllerBase
     {
         private readonly IMediator _mediator;
-        
         public TootajadController(IMediator mediator)
         {
             _mediator = mediator;
@@ -16,18 +16,18 @@ namespace KooliProjekt.WebAPI.Controllers
 
         [HttpGet]
         [Route("List")]
-        public async Task<IActionResult> List([FromQuery] ListTootajadQuery query)
+        public async Task<IActionResult> List([FromQuery] ListTootajaQuery query)
         {
-            var response = await _mediator.Send(query);
+            var result = await _mediator.Send(query);
 
-            return Result(response);
+            return Result(result);
         }
 
         [HttpGet]
         [Route("Get")]
-        public async Task<IActionResult> Get(int id)
+        public async Task<IActionResult> Get(int Id)
         {
-            var query = new GetTootajaQuery { Id = id };
+            var query = new GetTootajaQuery { Id = Id };
             var response = await _mediator.Send(query);
 
             return Result(response);
@@ -44,9 +44,8 @@ namespace KooliProjekt.WebAPI.Controllers
 
         [HttpDelete]
         [Route("Delete")]
-        public async Task<IActionResult> Delete(int id)
+        public async Task<IActionResult> Delete(DeleteTootajaCommand command)
         {
-            var command = new DeleteTootajaCommand { Id = id };
             var response = await _mediator.Send(command);
 
             return Result(response);

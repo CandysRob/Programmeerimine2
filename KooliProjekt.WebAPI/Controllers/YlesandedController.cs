@@ -1,6 +1,7 @@
 using System.Threading.Tasks;
 using KooliProjekt.Application.Features._Ylesanded;
 using MediatR;
+using Microsoft.AspNetCore.Http;
 using Microsoft.AspNetCore.Mvc;
 
 namespace KooliProjekt.WebAPI.Controllers
@@ -8,7 +9,6 @@ namespace KooliProjekt.WebAPI.Controllers
     public class YlesandedController : ApiControllerBase
     {
         private readonly IMediator _mediator;
-        
         public YlesandedController(IMediator mediator)
         {
             _mediator = mediator;
@@ -16,18 +16,18 @@ namespace KooliProjekt.WebAPI.Controllers
 
         [HttpGet]
         [Route("List")]
-        public async Task<IActionResult> List([FromQuery] ListYlesandedQuery query)
+        public async Task<IActionResult> List([FromQuery] ListYlesanneQuery query)
         {
-            var response = await _mediator.Send(query);
+            var result = await _mediator.Send(query);
 
-            return Result(response);
+            return Result(result);
         }
 
         [HttpGet]
         [Route("Get")]
-        public async Task<IActionResult> Get(int id)
+        public async Task<IActionResult> Get(int Id)
         {
-            var query = new GetYlesanneQuery { Id = id };
+            var query = new GetYlesanneQuery { Id = Id };
             var response = await _mediator.Send(query);
 
             return Result(response);
@@ -44,9 +44,8 @@ namespace KooliProjekt.WebAPI.Controllers
 
         [HttpDelete]
         [Route("Delete")]
-        public async Task<IActionResult> Delete(int id)
+        public async Task<IActionResult> Delete(DeleteYlesanneCommand command)
         {
-            var command = new DeleteYlesanneCommand { Id = id };
             var response = await _mediator.Send(command);
 
             return Result(response);

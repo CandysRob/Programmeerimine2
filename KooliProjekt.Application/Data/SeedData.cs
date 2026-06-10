@@ -1,4 +1,4 @@
-using System;
+ï»¿using System;
 using System.Linq;
 
 namespace KooliProjekt.Application.Data
@@ -6,7 +6,7 @@ namespace KooliProjekt.Application.Data
     /// <summary>
     /// 14.11.2025
     /// Testandmete generaator
-    /// Testandmed genereeritakse ainult siis kui mõni oluline tabel on tühi.
+    /// Testandmed genereeritakse ainult siis kui mÃµni oluline tabel on tÃ¼hi.
     /// </summary>
     public class SeedData
     {

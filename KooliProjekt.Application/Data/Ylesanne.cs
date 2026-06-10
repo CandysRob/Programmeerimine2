@@ -1,28 +1,32 @@
-using System;
+﻿using System;
+using System.Collections.Generic;
 using System.ComponentModel.DataAnnotations;
 using System.ComponentModel.DataAnnotations.Schema;
+using System.Linq;
+using System.Text;
+using System.Threading.Tasks;
 
 namespace KooliProjekt.Application.Data
 {
     public class Ylesanne
     {
         public int Id { get; set; }
-        
+
         [Required]
         [MaxLength(200)]
         [MinLength(1)]
         public string Pealkiri { get; set; }
-        
+
         [MaxLength(1000)]
         public string Kirjeldus { get; set; }
-        
+
         [Required]
         public DateTime Tahtaeg { get; set; }
-        
+
         [Required]
         [MaxLength(50)]
         public string Staatus { get; set; }
-        
+
         [Required]
         [Column(TypeName = "decimal(18,2)")]
         public decimal TunnidKokku { get; set; }

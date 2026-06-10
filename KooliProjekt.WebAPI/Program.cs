@@ -28,6 +28,7 @@ namespace KooliProjekt.WebAPI
             // Learn more about configuring Swagger/OpenAPI at https://aka.ms/aspnetcore/swashbuckle
             builder.Services.AddEndpointsApiExplorer();
             builder.Services.AddSwaggerGen();
+            builder.Services.AddCors();
 
             var applicationAssembly = typeof(ErrorHandlingBehavior<,>).Assembly;
             builder.Services.AddValidatorsFromAssembly(applicationAssembly);
@@ -39,8 +40,6 @@ namespace KooliProjekt.WebAPI
                 config.AddOpenBehavior(typeof(TransactionalBehavior<,>));
             });
 
-            builder.Services.AddTransient<SeedData>();
-
             var app = builder.Build();
 
             // Configure the HTTP request pipeline.
@@ -50,15 +49,27 @@ namespace KooliProjekt.WebAPI
                 app.UseSwaggerUI();
             }
 
+            app.UseCors(
+                options => options.AllowAnyOrigin()
+                .AllowAnyHeader()
+                .AllowAnyMethod());
+
             app.UseAuthorization();
 
 
             app.MapControllers();
 
             using (var scope = app.Services.CreateScope())
+            using (var db_context = scope.ServiceProvider.GetRequiredService<ApplicationDbContext>())
             {
-                var seed = scope.ServiceProvider.GetRequiredService<SeedData>();
-                seed.Generate();
+                db_context.Database.Migrate();
+
+                // 14.11.2025
+                // Andmete genereerimise lubame ainult Debug-re�iimis
+            #if (DEBUG)
+                var generator = new SeedData(db_context);
+                generator.Generate();
+            #endif
             }
 
             app.Run();

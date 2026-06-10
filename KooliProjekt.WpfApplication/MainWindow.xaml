@@ -1,0 +1,57 @@
+﻿<Window x:Class="KooliProjekt.WpfApplication.MainWindow"
+        xmlns="http://schemas.microsoft.com/winfx/2006/xaml/presentation"
+        xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml"
+        xmlns:d="http://schemas.microsoft.com/expression/blend/2008"
+        xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006"
+        xmlns:local="clr-namespace:KooliProjekt.WpfApplication"
+        mc:Ignorable="d"
+        Title="MainWindow" Height="450" Width="800">
+    <Grid>
+        <Grid.ColumnDefinitions>
+            <ColumnDefinition Width="*"></ColumnDefinition>
+            <ColumnDefinition Width="*"></ColumnDefinition>
+        </Grid.ColumnDefinitions>
+
+        <DataGrid x:Name="ToDoListsDataGrid" 
+                  CanUserAddRows="False"
+                  Grid.Column="0"
+                  ItemsSource="{Binding Data}"
+                  SelectedItem="{Binding SelectedItem}"
+                  AutoGenerateColumns="True" />
+
+        <StackPanel Grid.Column="1" Margin="10">
+            <TextBlock Text="ID"></TextBlock>
+            <TextBlock Text="{Binding SelectedItem.Id}"></TextBlock>
+
+            <TextBlock Text="Nimi"></TextBlock>
+            <TextBox Text="{Binding SelectedItem.Nimi}"></TextBox>
+
+            <TextBlock Text="Start time"></TextBlock>
+            <TextBox Text="{Binding SelectedItem.starttime}"></TextBox>
+
+            <TextBlock Text="End time"></TextBlock>
+            <TextBox Text="{Binding SelectedItem.endtime}"></TextBox>
+            
+            <TextBlock Text="Kirjeldus"></TextBlock>
+            <TextBox Text="{Binding SelectedItem.Kirjeldus}"></TextBox>
+
+            <StackPanel
+                        HorizontalAlignment="Center"
+                        Orientation="Horizontal">
+                <Button Margin="5" Padding="5" Command="{Binding AddNewCommand}">
+                    New
+                </Button>
+                <Button Margin="5" Padding="5" 
+                    Command="{Binding SaveCommand}" 
+                    CommandParameter="{Binding SelectedItem}">
+                    Save
+                </Button>
+                <Button Margin="5" Padding="5"
+                    Command="{Binding DeleteCommand}" 
+                    CommandParameter="{Binding SelectedItem}">
+                    Delete
+                </Button>
+            </StackPanel>
+        </StackPanel>
+    </Grid>
+</Window>
